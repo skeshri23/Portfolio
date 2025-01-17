@@ -1,4 +1,10 @@
-// scripts.js
-document.addEventListener('DOMContentLoaded', function() {
-    // Your JavaScript code here
+document.querySelectorAll('a.nav-link').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        if (this.getAttribute('href').startsWith('#')) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
 });

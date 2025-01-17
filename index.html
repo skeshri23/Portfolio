@@ -1,44 +1,105 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio - Shristi Keshri</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Shristi Keshri</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#">SHRISTI KESHRI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="technical.html">Technical Papers & Research</a></li>
+                <li class="nav-item"><a class="nav-link" href="work-experience.html">Work Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="awards-certifications.html">Awards & Certifications</a></li>
+                <li class="nav-item"><a class="nav-link" href="volunteering.html">Volunteering</a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="text-white text-center py-5">
+        <h2>Hi! I'm Shristi Keshri, a Computer Science student.</h2>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Write about yourself here.</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Title</h3>
-            <p>Description of the project.</p>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5">
+        <div class="row align-items-center">
+            <!-- Left Column: About Me Text -->
+            <div class="col-md-6">
+         <h1><b>About Me</b></h1>
+         <p>
+            I am a Computer Science major at The Ohio State University, set to graduate in May 2025. 
+            With a passion for technology and problem-solving, I have developed a strong foundation in software development, 
+            artificial intelligence, and web design through academic coursework and hands-on projects.
+        </p>
+         <p>
+            My work includes developing an iris-based authentication system for keyless car unlocking, 
+            building a sentiment analysis model from scratch to classify tweets, and creating optimized web solutions 
+            during my internship at PathPod. These experiences have allowed me to enhance my skills in Python, Java, web 
+            technologies, and AI frameworks, while fostering creativity and precision in solving real-world challenges.
+        </p>
+        <p>
+            Beyond technical projects, I have a history of leadership and collaboration. As a 
+            Student Manager at The Campus Grind, I earned the "Student Manager of the Year 2024" 
+            award for outstanding leadership and efficiency. My involvement in organizations like the 
+            Society of Women Engineers and the Association for Computing Machinery Women’s Chapter reflects my 
+            commitment to fostering inclusivity and professional growth in tech.
+        </p>
+        <p>
+            I am seeking full-time opportunities in software development, AI engineering, or web development 
+            to apply my technical expertise, innovative mindset, and drive for impactful solutions. Let's build something extraordinary together!
+        </p>
+        </div>
+
+        <!-- Right Column: Profile Photo -->
+        <div class="col-md-6 text-center">
+            <img src="images/portrait.jpg" alt="Shristi Keshri" class="profile-photo">
+
+            <!-- Contact and Resume Section -->
+            <section id="contact-resume" class="my-4">
+                <div class="row justify-content-center">
+                    <!-- Contact Button -->
+                    <div class="col-12 mb-3">
+                        <a href="mailto:shristikeshri2110@gmail.com" class="btn btn-success btn-lg w-70">Contact Me</a>
+                    </div>
+                    <!-- Download Resume Button -->
+                    <div class="col-12">
+                        <a href="ShristiKeshri_Resume.pdf" download="ShristiKeshri_Resume.pdf" class="btn btn-success btn-lg w-70">Download Resume</a>
+                    </div>
+                </div>
+            </section>
+        </div>
         </div>
     </section>
-    <section id="resume">
-        <h2>Resume</h2>
-        <a href="resume.pdf" target="_blank">Download Resume</a>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-    </section>
-    <script src="scripts.js"></script>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>&copy; 2025 Shristi Keshri. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 </body>
 </html>
-
