@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    margin-top: 56px; /* Offset for fixed navbar */
+    background-color: #f7eddd; /* Light beige background */
+}
+
+h2 {
+    color: #f7eddd;
+    font-weight: 700;
+    padding-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+p {
+    
+    line-height: 1.6;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header, section {
+    flex-direction: column; /* Stack content vertically */
+}
+
+#about {
+    padding: 2rem 0;
+}
+
+.profile-photo {
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Make it a square */
+    margin-bottom: 2rem; /* Add some spacing below the photo */
+    object-fit: cover; /* Ensure the image is properly cropped */
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #084321; /* Green theme */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav-link {
+    color: #f7eddd !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #f8f9fa !important;
+}
+
+/* Navbar Brand (SHRISTI KESHRI) */
+.navbar-brand {
+    color: #f7eddd !important; /* Set to white */
+    font-weight: bold; /* Optional: Make it bold */
+    transition: color 0.3s ease; /* Add a smooth color transition */
+}
+
+.navbar-brand:hover {
+    color: #f8f9fa !important; /* Slightly lighter color on hover */
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #03662e, #97cfaf); /* Green gradient */
+    color: #f7eddd; /* Text color */
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+/* Projects Section */
+.card {
+    box-shadow: 0 4px 8px rgba(8, 67, 9, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;  /* Align items vertically inside the card */
+    justify-content: space-between;  /* Space out content, so the button goes at the bottom */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-title {
+    font-weight: 700;
+    margin-bottom: 10px;  /* Add space below the title */
+}
+
+.card-text {
+    margin-bottom: 20px;  /* Add space below the text */
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* Ensure the text and button are spaced out */
+}
+
+.card .btn {
+    margin-top: auto;  /* Push button to the bottom of the card */
+}
+
+.btn-success {
+    background-color: #084321; /* New background color */
+    color: #f7eddd; /* Text color */
+}
+
+.btn-success:hover {
+    background-color: #084321; /* Darker shade on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #084321; /* Green theme */
+    color:#f7eddd;
+    margin-top: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 2rem 1rem;
+    }
+}
